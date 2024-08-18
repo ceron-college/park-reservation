@@ -29,29 +29,29 @@ Agents are client processes that send reservation requests to the controller. Ea
 
 The controller is invoked from the shell with the following command:
 
-\`\`\`bash
+```bash
 $ ./controlador –i horaInicio –f horafinal –s segundoshora –t totalpersonas –p pipecrecibe
-\`\`\`
+```
 
 Parameters:
-- \`horaInicio\`: Start time for the simulation (1-24).
-- \`horaFinal\`: End time for the simulation (1-24).
-- \`segundosHora\`: Real-time seconds that simulate one hour in the simulation.
-- \`totalPersonas\`: Maximum number of people allowed in the park at any given hour.
-- \`pipecrecibe\`: Named pipe for receiving requests from agents.
+- `horaInicio`: Start time for the simulation (1-24).
+- `horaFinal`: End time for the simulation (1-24).
+- `segundosHora\`: Real-time seconds that simulate one hour in the simulation.
+- `totalPersonas`: Maximum number of people allowed in the park at any given hour.
+- `pipecrecibe`: Named pipe for receiving requests from agents.
 
 ### Agent Invocation
 
 Agents are invoked with the following command:
 
-\`\`\`bash
+```bash
 $ ./agente –s nombre –a archivosolicitudes –p pipecrecibe
-\`\`\`
+```
 
 Parameters:
-- \`nombre\`: Name of the agent (used for identification).
-- \`archivoSolicitudes\`: File containing reservation requests.
-- \`pipecrecibe\`: Named pipe for communication with the controller.
+- `nombre`: Name of the agent (used for identification).
+- `archivoSolicitudes`: File containing reservation requests.
+- `pipecrecibe`: Named pipe for communication with the controller.
 
 ## Simulation Flow
 
@@ -76,24 +76,24 @@ To build and run the project, use the provided `Makefile`. Ensure that all sourc
 
 ### Building the Project
 
-\`\`\`bash
+```bash
 $ make
-\`\`\`
+```
 
 ### Running the Simulation
 
 First, start the controller:
 
-\`\`\`bash
+```bash
 $ ./controlador –i 7 –f 19 –s 1 –t 50 –p /tmp/pipe1
-\`\`\`
+```
 
 Then, start the agents:
 
-\`\`\`bash
+```bash
 $ ./agente –s Agent1 –a requests.txt –p /tmp/pipe1
 $ ./agente –s Agent2 –a requests2.txt –p /tmp/pipe1
-\`\`\`
+```
 
 ## Authors
 
