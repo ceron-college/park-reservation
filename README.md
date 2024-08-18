@@ -1,4 +1,4 @@
-# Park Reservation Simulation
+# POSIX Park Reservation Simulation
 
 This project implements a simulation of a reservation system for a small private park, "Parque Berlín". The system helps manage the park's occupancy by allowing families to reserve specific time slots during the day, ensuring the park does not exceed its maximum capacity.
 
