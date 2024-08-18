@@ -102,6 +102,3 @@ This project was developed as part of the Operating Systems course at Pontifical
 - Felipe Londoño
 - Alejandro Barragan
 - Nicolas Cerón
-
-## Professor:
-Osberth De Castro Cuevas
