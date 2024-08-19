@@ -99,6 +99,6 @@ $ ./agente –s Agent2 –a requests2.txt –p /tmp/pipe1
 
 This project was developed as part of the Operating Systems course at Pontifical Xavierian University, presented by:
 
+- Nicolas Cerón
 - Felipe Londoño
 - Alejandro Barragan
-- Nicolas Cerón
